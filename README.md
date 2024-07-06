@@ -21,5 +21,5 @@ The main goal of this project is to create a template for many projects with Rea
 
 
 ### Author
-    **Gonzalo Ilhuicatzi Netzahualcoyotl**
-    _g.ilhuicatzi@gmail.com_
+    Gonzalo Ilhuicatzi Netzahualcoyotl
+    g.ilhuicatzi@gmail.com
