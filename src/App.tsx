@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import About from "./pages/AboutPage";
 import Home from "./pages/HomePage";
 import CocktailPage from "./pages/CocktailPage";
@@ -14,16 +14,18 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/cocktail" element={<CocktailPage />} />
-        <Route path="/cocktail/code" element={<CocktailCodePage />} />
-        <Route path="/random-users" element={<RandomUsersPage />} />
-        <Route path="/random-users/code" element={<RandomUsersCodePage />} />
-        <Route path="/rick-morty" element={<RickMortyPage />} />
-        <Route path="/rick-morty/code" element={<RickMortyCodePage />} />
-      </Routes>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/cocktail" element={<CocktailPage />} />
+          <Route path="/cocktail-code" element={<CocktailCodePage />} />
+          <Route path="/random-users" element={<RandomUsersPage />} />
+          <Route path="/random-users-code" element={<RandomUsersCodePage />} />
+          <Route path="/rick-morty" element={<RickMortyPage />} />
+          <Route path="/rick-morty-code" element={<RickMortyCodePage />} />
+        </Routes>
+      </HashRouter>
       <Footer />
     </div>
   );
