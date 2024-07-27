@@ -39,7 +39,7 @@ Este repositorio demuestra diversas maneras de realizar solicitudes HTTP (fetch)
 
 1. **Clonar el repositorio**:
     ```bash
-    git clone https://github.com/tuusuario/fetch-examples.git
+    git clone https://github.com/ilhuicatzi/use-fetch-examples.git
     ```
 
 2. **Instalar dependencias**:

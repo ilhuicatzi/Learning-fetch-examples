@@ -46,7 +46,7 @@ function Navbar() {
             <button
               className="flex items-center"
               onClick={() =>
-                window.open("https://github.com/ilhuicatzi", "_blank")
+                window.open("https://github.com/ilhuicatzi/use-fetch-examples", "_blank")
               }
             >
               <GithubIcon className="text-xl" />
@@ -103,7 +103,7 @@ function Navbar() {
               className="hover:bg-muted w-full flex justify-center items-center p-1 rounded-md"
               onClick={() => {
                 setIsOpen(false);
-                window.open("https://github.com/ilhuicatzi", "_blank");
+                window.open("https://github.com/ilhuicatzi/use-fetch-examples", "_blank");
               }}
             >
               <GithubIcon className="text-xl" />
