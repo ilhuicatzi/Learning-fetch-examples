@@ -1,18 +1,57 @@
-import CodeComponent from "../components/code/CodeComponent"
-import { CodeExample } from "../utils/codeExample"
+import {
+  Introduction,
+  ExampleAsync,
+  ExampleAxios,
+  ExampleFetch,
+  ExampleQuery,
+  ExampleReact,
+} from "../components/body/index";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 
 function HomePage() {
   return (
     <main className="px-4 sm:px-16 ">
-      <section className="w-3/4 mt-10">
-        <h1 className="text-4xl my-5">Home Page</h1>
-        <p className="dark:text-zinc-300 text-zinc-700">Welcome to the Home Page</p>
-        <CodeComponent codeString={CodeExample} size="320px"/>
+      <Introduction />
+      <section className="sm:w-3/4">
+        <Accordion>
+          <AccordionItem
+            title="Usando Fetch"
+            classNames={{ title: "text-2xl" }}
+          >
+            <ExampleFetch />
+          </AccordionItem>
 
+          <AccordionItem
+            title="Usando Async/Await"
+            classNames={{ title: "text-2xl" }}
+          >
+            <ExampleAsync />
+          </AccordionItem>
+
+          <AccordionItem
+            title="Usando React"
+            classNames={{ title: "text-2xl" }}
+          >
+            <ExampleReact />
+          </AccordionItem>
+
+          <AccordionItem
+            title="Usando Axios"
+            classNames={{ title: "text-2xl" }}
+          >
+            <ExampleAxios />
+          </AccordionItem>
+
+          <AccordionItem
+            title="Usando React Query"
+            classNames={{ title: "text-2xl" }}
+          >
+            <ExampleQuery />
+          </AccordionItem>
+        </Accordion>
       </section>
-
     </main>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;

@@ -1,6 +1,6 @@
 
 import hljs from "highlight.js";
-import "highlight.js/styles/an-old-hope.css";
+import "highlight.js/styles/solarized-dark.css";
 import javascript from "highlight.js/lib/languages/javascript";
 import { CopyIcon } from "../../assets/icons/CopyIcon";
 import { Toaster, toast } from 'sonner'
@@ -9,10 +9,9 @@ hljs.registerLanguage("javascript", javascript);
 
 type Props = {
   codeString: string,
-  size: string
 }
 
-function CodeComponent({ codeString, size} : Props) {
+function CodeComponent({ codeString} : Props) {
   const highlightedCode = hljs.highlight(codeString, {
     language: "javascript",
   }).value;
@@ -30,7 +29,7 @@ function CodeComponent({ codeString, size} : Props) {
           <CopyIcon />
         </button>
       </div>
-      <div className={`w-full bg-zinc-100 dark:bg-zinc-900/70 rounded-lg overflow-auto h-[${size}]`}>
+      <div className={`w-full bg-zinc-100 dark:bg-zinc-900/70 rounded-lg overflow-auto`}>
         <pre>
           <code
             className="block px-4 pb-4 text-sm language-javascript"
